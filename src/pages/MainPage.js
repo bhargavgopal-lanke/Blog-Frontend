@@ -9,13 +9,13 @@ export default function MainPage() {
 	let history = useHistory();
 
 	useEffect(()=>{
-		Axios.get('http://localhost:3001/api/get').then((data)=>{
+		Axios.get('https://blog-mysql-deploy.herokuapp.com/api/get').then((data)=>{
 			setPostList(data.data);
 		});
 	},[]);
 
 	const likePost = (id) => {
-		Axios.post(`http://localhost:3001/api/like/${id}`).then((response)=> {
+		Axios.post(`https://blog-mysql-deploy.herokuapp.com/api/like/${id}`).then((response)=> {
 			alert('you like a post');
 		});
 	};

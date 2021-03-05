@@ -19,7 +19,7 @@ export default function CreatePost() {
 	/*AXIOS MAKES ME ALLOW TO HTTP REQUESTS TO BACKEND*/
 
 	const submitPost = () => {
-		Axios.post('http://localhost:3001/api/create', 
+		Axios.post('https://blog-mysql-deploy.herokuapp.com/api/create', 
 			{
 				userName: userName,
 			 	title: title,
