@@ -18,6 +18,7 @@ export default function Post() {
       });
     });
   }, []);
+  
   return (
     <div className="individualPost">
       <div className="Post individual">
